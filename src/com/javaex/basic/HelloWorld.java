@@ -1,4 +1,4 @@
-package com.javaex.helloworld;
+package com.javaex.basic;
 
 /*
  * 화면에 Hello, World라 출력 해주자
@@ -11,3 +11,4 @@ public class HelloWorld {
 		System.out.println("Hello, World!");
 	}
 }
+
