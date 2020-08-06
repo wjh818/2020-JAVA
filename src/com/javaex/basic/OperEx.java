@@ -24,6 +24,7 @@ public class OperEx {
 		//점수가 80점 이상이면 Good, 50점 이상이면 Pass, 그렇지 않으면 Fail
 		message = score >= 80 ? "Good" : score >= 50 ? "Pass" : "Fail";
 		System.out.println("시험 결과: " + message);
+		//3항 연산자 중첩 가능, but 추천하지는 않음 (가독성이 떨어짐, 복잡한 비교의 경우는 비교문으로 해결)
 	}
 	
 	//비트 연산자
