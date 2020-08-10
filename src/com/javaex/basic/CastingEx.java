@@ -1,11 +1,11 @@
 package com.javaex.basic;
 
-//µ¥ÀÌÅÍ Å¸ÀÔÀ» ´Ù¸¥ µ¥ÀÌÅÍ Å¸ÀÔÀ¸·Î º¯°æ (Casting)
-//1. Á¼Àº Ç¥Çö ¹üÀ§ µ¥ÀÌÅÍ -> ³ĞÀº Ç¥Çö ¹üÀ§ µ¥ÀÌÅÍ (Promotion)
-//2. ³ĞÀº Ç¥Çö ¹üÀ§ µ¥ÀÌÅÍ -> ºÎºĞ Ç¥Çö ¹üÀ§ µ¥ÀÌÅÍ (Casting)
+//ë°ì´í„° íƒ€ì…ì„ ë‹¤ë¥¸ ë°ì´í„° íƒ€ì…ìœ¼ë¡œ ë³€ê²½ (Casting)
+//1. ì¢ì€ í‘œí˜„ ë²”ìœ„ ë°ì´í„° -> ë„“ì€ í‘œí˜„ ë²”ìœ„ ë°ì´í„° (Promotion)
+//2. ë„“ì€ í‘œí˜„ ë²”ìœ„ ë°ì´í„° -> ë¶€ë¶„ í‘œí˜„ ë²”ìœ„ ë°ì´í„° (Casting)
 public class CastingEx {
 	
-	//ÀÚ·áÇüÀÇ Å©±â
+	//ìë£Œí˜•ì˜ í¬ê¸°
 	//byte(1) < short(2) < int(4) < long(8) << float(4) < double(8)
 	public static void main(String[] args) {
 //		promotionEx();
@@ -14,10 +14,10 @@ public class CastingEx {
 	
 	
 	public static void castingEx() {
-		//explicit casting(¸í½ÃÀû º¯È¯)
-		//Ç¥Çö ¹üÀ§°¡ ³ĞÀº Å¸ÀÓ -> Á¼Àº Å¸ÀÔÀ¸·ÎÀÇ º¯È¯
-		//ÀÚ·áÀÇ À¯½Ç ¹ß»ı °¡´É
-		//°³¹ßÀÚ°¡ ¸í½ÃÀûÀ¸·Î º¯È¯ÇÒ ÀÚ·áÇüÀ» ÁöÁ¤
+		//explicit casting(ëª…ì‹œì  ë³€í™˜)
+		//í‘œí˜„ ë²”ìœ„ê°€ ë„“ì€ íƒ€ì„ -> ì¢ì€ íƒ€ì…ìœ¼ë¡œì˜ ë³€í™˜
+		//ìë£Œì˜ ìœ ì‹¤ ë°œìƒ ê°€ëŠ¥
+		//ê°œë°œìê°€ ëª…ì‹œì ìœ¼ë¡œ ë³€í™˜í•  ìë£Œí˜•ì„ ì§€ì •
 		float f = 1234.5678F;
 		System.out.println("float: " + f);
 		
@@ -30,22 +30,22 @@ public class CastingEx {
 	
 	
 	public static void promotionEx() {
-		//implicit casting(¾Ï¹¬Àû º¯È¯)
-		//Ç¥Çö ¹üÀ§°¡ Á¼Àº Å¸ÀÔ -> ³ĞÀº Å¸ÀÔÀ¸·ÎÀÇ º¯È¯
-		byte b = 25; //1¹ÙÀÌÆ® Á¤¼öÇü
-		System.out.println("¹ÙÀÌÆ®: " + b);
+		//implicit casting(ì•”ë¬µì  ë³€í™˜)
+		//í‘œí˜„ ë²”ìœ„ê°€ ì¢ì€ íƒ€ì… -> ë„“ì€ íƒ€ì…ìœ¼ë¡œì˜ ë³€í™˜
+		byte b = 25; //1ë°”ì´íŠ¸ ì •ìˆ˜í˜•
+		System.out.println("ë°”ì´íŠ¸: " + b);
 		
-		short s = b; //2¹ÙÀÌÆ® Á¤¼öÇü
+		short s = b; //2ë°”ì´íŠ¸ ì •ìˆ˜í˜•
 		System.out.println("short: " + s);
 		
-		int i = s; //4¹ÙÀÌÆ® Á¤¼öÇü
+		int i = s; //4ë°”ì´íŠ¸ ì •ìˆ˜í˜•
 		System.out.println("int: " + i);
 		
-		long l = i; //8¹ÙÀÌÆ® Á¤¼öÇü
+		long l = i; //8ë°”ì´íŠ¸ ì •ìˆ˜í˜•
 		System.out.println("long: " + l);
 		
-		float f = l; //4¹ÙÀÌÆ® ½Ç¼öÇü
-		//¹ÙÀÌÆ® ¼ö´Â ÀûÁö¸¸ Ç¥Çö¹üÀ§°¡ float°¡ longº¸´Ù ³ĞÀ½
+		float f = l; //4ë°”ì´íŠ¸ ì‹¤ìˆ˜í˜•
+		//ë°”ì´íŠ¸ ìˆ˜ëŠ” ì ì§€ë§Œ í‘œí˜„ë²”ìœ„ê°€ floatê°€ longë³´ë‹¤ ë„“ìŒ
 		System.out.println("float: " + f);
 		
 		//double
