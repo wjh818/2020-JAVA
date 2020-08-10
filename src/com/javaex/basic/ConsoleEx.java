@@ -9,44 +9,44 @@ public class ConsoleEx {
 		consoleInput();
 	}
 	
-	//ÄÜ¼Ö ÀÔ·Â(System.in)
-	//Scanner Å¬·¡½º¸¦ ÀÌ¿ëÇÏ¸é ´Ù¾çÇÑ ÀÔ·Â ¼Ò½º·ÎºÎÅÍ µ¥ÀÌÅÍ ÀÔ·Â ¹ÞÀ» ¼ö ÀÖ´Ù
+	//ì½˜ì†” ìž…ë ¥(System.in)
+	//Scanner í´ëž˜ìŠ¤ë¥¼ ì´ìš©í•˜ë©´ ë‹¤ì–‘í•œ ìž…ë ¥ ì†ŒìŠ¤ë¡œë¶€í„° ë°ì´í„° ìž…ë ¥ ë°›ì„ ìˆ˜ ìžˆë‹¤
 	public static void consoleInput() {
-		//Tip1. Ctrl + Shift + O -> ÀÚµ¿ import 
+		//Tip1. Ctrl + Shift + O -> ìžë™ import 
 		//Tip2. Ctrl + Space -> Code Assist
 		Scanner scanner = new Scanner(System.in);
-		//ÀÌ¸§Àº? -> ¹®ÀÚ¿­ µ¥ÀÌÅÍ ÀÔ·Â
-		//³ªÀÌ´Â? ÀÌ¶ó°í ¹¯°í Á¤¼ö µ¥ÀÌÅÍ ÀÔ·Â
-		//Ãâ·Â -> ÀÌ¸§, ³ªÀÌ´Â OO¼¼
-		System.out.print("ÀÌ¸§Àº? ");
+		//ì´ë¦„ì€? -> ë¬¸ìžì—´ ë°ì´í„° ìž…ë ¥
+		//ë‚˜ì´ëŠ”? ì´ë¼ê³  ë¬»ê³  ì •ìˆ˜ ë°ì´í„° ìž…ë ¥
+		//ì¶œë ¥ -> ì´ë¦„, ë‚˜ì´ëŠ” OOì„¸
+		System.out.print("ì´ë¦„ì€? ");
 		String name = scanner.next();
-		System.out.print("³ªÀÌ´Â? ");
+		System.out.print("ë‚˜ì´ëŠ”? ");
 		int age = scanner.nextInt();
 		
-		System.out.println("ÀÌ¸§Àº " + name + ", ³ªÀÌ´Â " + age);
-		//½Ã½ºÅÛ ÀÚ¿øÀ» »ç¿ëÇÏ´Â ±â´ÉÀ» ÀÌ¿ëÇÑ ÈÄ¿¡´Â ¹Ýµå½Ã ´Ý¾ÆÁÖÀÚ ***Áß¿ä***
+		System.out.println("ì´ë¦„ì€ " + name + ", ë‚˜ì´ëŠ” " + age);
+		//ì‹œìŠ¤í…œ ìžì›ì„ ì‚¬ìš©í•˜ëŠ” ê¸°ëŠ¥ì„ ì´ìš©í•œ í›„ì—ëŠ” ë°˜ë“œì‹œ ë‹«ì•„ì£¼ìž ***ì¤‘ìš”***
 		scanner.close();
 	}
 	
-	//ÄÜ¼Ö Ãâ·Â
+	//ì½˜ì†” ì¶œë ¥
 	public static void consoleOutput() {
-		//System.out.print -> Ãâ·Â ÈÄ °³Çà ¾øÀ½
-		//System.out.println -> Ãâ·Â ÈÄ °³Çà
-		//System.out.printf -> Çü½ÄÈ­µÈ Ãâ·Â: StringÇÒ ¶§ Á¤¸®
+		//System.out.print -> ì¶œë ¥ í›„ ê°œí–‰ ì—†ìŒ
+		//System.out.println -> ì¶œë ¥ í›„ ê°œí–‰
+		//System.out.printf -> í˜•ì‹í™”ëœ ì¶œë ¥: Stringí•  ë•Œ ì •ë¦¬
 		System.out.print("Hello ");
 		System.out.println("Java");
 		
-		//ÀÌ½ºÄÉÀÌÇÁ ¹®ÀÚ(½ÃÄö½º)
-		// \n: °³Çà
-		// \t: ÅÇ
-		// \": ½Öµû¿ÈÇ¥
+		//ì´ìŠ¤ì¼€ì´í”„ ë¬¸ìž(ì‹œí€€ìŠ¤)
+		// \n: ê°œí–‰
+		// \t: íƒ­
+		// \": ìŒë”°ì˜´í‘œ
 		// \\: \
 		System.out.println("Hello\nJava");
 		System.out.println("Hello\tJava");
-		String message = "Hello, \"Java\""; //½Öµû¿ÈÇ¥
+		String message = "Hello, \"Java\""; //ìŒë”°ì˜´í‘œ
 		
-		//ÆÄÀÏÀ» ´Ù·ï¾ß ÇÏ´Âµ¥ C:\mydir\myfile.txt
-		String dir = "C:\\mydir\\myfile.txt"; // //->/ : ¿ª½½·¡½Ã
+		//íŒŒì¼ì„ ë‹¤ë¤„ì•¼ í•˜ëŠ”ë° C:\mydir\myfile.txt
+		String dir = "C:\\mydir\\myfile.txt"; // //->/ : ì—­ìŠ¬ëž˜ì‹œ
 		System.out.println(dir);
 		
 	}
