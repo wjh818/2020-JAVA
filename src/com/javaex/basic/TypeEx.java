@@ -1,6 +1,6 @@
 package com.javaex.basic;
 
-//ÀÚ¹ÙÀÇ ±âº» ÀÚ·áÇü ¿¬½À
+//ìë°”ì˜ ê¸°ë³¸ ìë£Œí˜• ì—°ìŠµ
 public class TypeEx {
 
 	public static void main(String[] args) {
@@ -11,46 +11,46 @@ public class TypeEx {
 		constantEx();
 	}
 	
-	//»ó¼ö ¿¬½À(constant)
+	//ìƒìˆ˜ ì—°ìŠµ(constant)
 	public static void constantEx() {
-		//º¯ÇÏÁö ¾Ê´Â µ¥ÀÌÅÍ
-		//finalÀ» ¼±¾ğºÎ ¾Õ¿¡ ºÙÀÌ¸é µÈ´Ù
-		//»ó¼ö ½Äº°ÀÚ´Â ¸ğµÎ ´ë¹®ÀÚ, ¿©·¯ ´Ü¾î °áÇÕ½Ã ´Ü¾î »çÀÌ¿¡ _
+		//ë³€í•˜ì§€ ì•ŠëŠ” ë°ì´í„°
+		//finalì„ ì„ ì–¸ë¶€ ì•ì— ë¶™ì´ë©´ ëœë‹¤
+		//ìƒìˆ˜ ì‹ë³„ìëŠ” ëª¨ë‘ ëŒ€ë¬¸ì, ì—¬ëŸ¬ ë‹¨ì–´ ê²°í•©ì‹œ ë‹¨ì–´ ì‚¬ì´ì— _
 		final double PI = 3.14159; 
-		//»ó¼ö °ªÀ» º¯°æÇÏ¸é ÇØ´ç »ç¼ö¸¦ »ç¿ëÇÑ ¸ğµç ÄÚµå°¡ º¯°æ
-		//1. ÄÚµåÀÇ °¡µ¶¼º
-		//2. ÄÚµå À¯Áö º¸¼öÀÇ ÀåÁ¡
+		//ìƒìˆ˜ ê°’ì„ ë³€ê²½í•˜ë©´ í•´ë‹¹ ì‚¬ìˆ˜ë¥¼ ì‚¬ìš©í•œ ëª¨ë“  ì½”ë“œê°€ ë³€ê²½
+		//1. ì½”ë“œì˜ ê°€ë…ì„±
+		//2. ì½”ë“œ ìœ ì§€ ë³´ìˆ˜ì˜ ì¥ì 
 		final int SPEED_LIMIT = 110;
 		
 		System.out.println("PI = " + PI);
-		System.out.println("Á¦ÇÑ¼Óµµ = " + SPEED_LIMIT);
+		System.out.println("ì œí•œì†ë„ = " + SPEED_LIMIT);
 		
-//		Speed_LIMIT = 80; //»ó¼öÀÌ¹Ç·Î º¯°æ ºÒ°¡ÇÏ°Ô µÈ´Ù
-		System.out.println("Á¦ÇÑ¼Óµµ = " + SPEED_LIMIT);
+//		Speed_LIMIT = 80; //ìƒìˆ˜ì´ë¯€ë¡œ ë³€ê²½ ë¶ˆê°€í•˜ê²Œ ëœë‹¤
+		System.out.println("ì œí•œì†ë„ = " + SPEED_LIMIT);
 	}
 
-	//charÇü ¿¬½À
+	//charí˜• ì—°ìŠµ
 	public static void charEx() {
-		//2¹ÙÀÌÆ®(ºÎÈ£¾øÀ½)
-		//À¯´ÏÄÚµå ÇÑ ±ÛÀÚÀÇ ¼öÄ¡È­µÈ ÄÚµå
-		//''·Î ¹­¾îÁà¾ßÇÔ <- char
+		//2ë°”ì´íŠ¸(ë¶€í˜¸ì—†ìŒ)
+		//ìœ ë‹ˆì½”ë“œ í•œ ê¸€ìì˜ ìˆ˜ì¹˜í™”ëœ ì½”ë“œ
+		//''ë¡œ ë¬¶ì–´ì¤˜ì•¼í•¨ <- char
 		//"" <- String
 		char ch1 = 'A';
-		char ch2 = 'ÇÑ';
+		char ch2 = 'í•œ';
 		
 		System.out.println("A -> " + ch1);
-		System.out.println("ÇÑ -> " + ch2);
+		System.out.println("í•œ -> " + ch2);
 		
 		System.out.println(ch1 + ch2);
 		
 	}
 	
 	
-	//boolean ¿¬½À
+	//boolean ì—°ìŠµ
 	public static void booleanEx() {
-		//³í¸®°ª true or false
-		//ºñ±³¿¬»ê, ³í¸®¿¬»êÀÇ °á°ú¸¦ ¹İÈ¯
-		//Èå¸§Á¦¾î, ¹İº¹¿¡¼­ Èå¸§À» Á¦¾îÇÒ ¶§ ÀÌ °ªÀ» »ç¿ëÇÑ´Ù
+		//ë…¼ë¦¬ê°’ true or false
+		//ë¹„êµì—°ì‚°, ë…¼ë¦¬ì—°ì‚°ì˜ ê²°ê³¼ë¥¼ ë°˜í™˜
+		//íë¦„ì œì–´, ë°˜ë³µì—ì„œ íë¦„ì„ ì œì–´í•  ë•Œ ì´ ê°’ì„ ì‚¬ìš©í•œë‹¤
 		boolean b1 = true;
 		boolean b2 = false;
 		
@@ -61,40 +61,40 @@ public class TypeEx {
 		int v2 = 5;
 		
 		boolean result = v1 < v2;
-		//ºñ±³¿¬»ê, ³í¸®¿¬»êÀÇ °á°ú·Î ¹İÈ¯
+		//ë¹„êµì—°ì‚°, ë…¼ë¦¬ì—°ì‚°ì˜ ê²°ê³¼ë¡œ ë°˜í™˜
 		System.out.println("v1 < v2 ? " + result);
 	}
 	
-	//½Ç¼öÇü ¿¬½À
+	//ì‹¤ìˆ˜í˜• ì—°ìŠµ
 	//float (4) < double(8)
 	public static void floatDoubleTest() {
-		//Á¤¹Ğµµ Æ÷±â, ´ë½Å Ç¥Çö ¹üÀ§¸¦ ³ĞÈù ÀÚ·áÇü
-		float fVar = 3.14159F; //float´Â ¸¶Áö¸·¿¡ F
+		//ì •ë°€ë„ í¬ê¸°, ëŒ€ì‹  í‘œí˜„ ë²”ìœ„ë¥¼ ë„“íŒ ìë£Œí˜•
+		float fVar = 3.14159F; //floatëŠ” ë§ˆì§€ë§‰ì— F
 		double dVar = 3.14159;
 		
-		//Á¤¹Ğµµ ÆÄ¾Ç
+		//ì •ë°€ë„ íŒŒì•…
 		fVar = 0.1234567890123456789F;
 		dVar = 0.1234567890123456789;
 		
 		System.out.println("float:" + fVar);
 		System.out.println("double:" + dVar);
 		
-		//Áö¼ö Ç¥±â¹ı
+		//ì§€ìˆ˜ í‘œê¸°ë²•
 		fVar = 1234567890E-10F;
 		System.out.println(fVar);
 		
-		//½Ç¼ö ÀÚ·áÇüÀÇ Ã³¸®´Â Á¤¹Ğµµ°¡ ¶³¾îÁø´Ù(Ç¥Çö ¹üÀ§¸¦ ³ĞÈû)
+		//ì‹¤ìˆ˜ ìë£Œí˜•ì˜ ì²˜ë¦¬ëŠ” ì •ë°€ë„ê°€ ë–¨ì–´ì§„ë‹¤(í‘œí˜„ ë²”ìœ„ë¥¼ ë„“í˜)
 		System.out.println(0.1 * 3);
-		//±İÀ¶±Ç °°ÀÌ Á¤¹Ğµµ¸¦ ¿ä±¸ÇÏ´Â °³¹ß¿¡´Â float, double »ç¿ë À¯ÀÇÇØ¾ß ÇÔ
+		//ê¸ˆìœµê¶Œ ê°™ì´ ì •ë°€ë„ë¥¼ ìš”êµ¬í•˜ëŠ” ê°œë°œì—ëŠ” float, double ì‚¬ìš© ìœ ì˜í•´ì•¼ í•¨
 	}
-	//Á¤¼öÇü ¿¬½À
+	//ì •ìˆ˜í˜• ì—°ìŠµ
 	//byte < short < int < long
 	public static void intLongTest() {
-		//º¯¼ö ¼±¾ğ
-		//int -> ÀÚ¹Ù°¡ ´Ù·ç´Â Á¤¼öÇüÀÇ °¡Àå ±âº»ÀûÀÎ ÇüÅÂ
+		//ë³€ìˆ˜ ì„ ì–¸
+		//int -> ìë°”ê°€ ë‹¤ë£¨ëŠ” ì •ìˆ˜í˜•ì˜ ê°€ì¥ ê¸°ë³¸ì ì¸ í˜•íƒœ
 		int intVar1;
-		intVar1 = 2020; //ÃÊ±âÈ­ ÀÛ¾÷
-		int intVar2 = 2020; //¼±¾ğ + ÃÊ±âÈ­ ÀÛ¾÷
+		intVar1 = 2020; //ì´ˆê¸°í™” ì‘ì—…
+		int intVar2 = 2020; //ì„ ì–¸ + ì´ˆê¸°í™” ì‘ì—…
 		
 		System.out.println(intVar1);
 		System.out.println(intVar2);
@@ -102,15 +102,15 @@ public class TypeEx {
 		//long : 8byte
 		long longVar1;
 		longVar1 = 2020;
-		long longVar2 = 123456789012345678L; //¸Ç µÚ¿¡ L ºÙ¿©ÁÖ±â
+		long longVar2 = 123456789012345678L; //ë§¨ ë’¤ì— L ë¶™ì—¬ì£¼ê¸°
 		
 		System.out.println(longVar1);
 		System.out.println(longVar2);
 		
-		//2Áø¼ö, 8Áø¼ö, 16Áø¼ö
-		int bin = 0b1100; //2Áø¼ö 0b·Î ½ÃÀÛ
-		int oct = 010; //8Áø¼ö´Â 0À¸·Î ½ÃÀÛ
-		int hex = 0xFF; //16Áø¼ö´Â 0x·Î ½ÃÀÛ
+		//2ì§„ìˆ˜, 8ì§„ìˆ˜, 16ì§„ìˆ˜
+		int bin = 0b1100; //2ì§„ìˆ˜ 0bë¡œ ì‹œì‘
+		int oct = 010; //8ì§„ìˆ˜ëŠ” 0ìœ¼ë¡œ ì‹œì‘
+		int hex = 0xFF; //16ì§„ìˆ˜ëŠ” 0xë¡œ ì‹œì‘
 
 		System.out.println(bin);
 		System.out.println(oct);
