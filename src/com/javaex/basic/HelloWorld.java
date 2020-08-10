@@ -1,13 +1,13 @@
 package com.javaex.basic;
 
 /*
- * È­¸é¿¡ Hello, World¶ó Ãâ·Â ÇØÁÖÀÚ
+ *  í™”ë©´ì— Hello, Worldë¼ ì¶œë ¥ í•´ì£¼ì
  */
 public class HelloWorld {
 
-	//Á÷Á¢ ½ÇÇàÀ» À§ÇØ¼­´Â main¸Ş¼­µå°¡ ÇÊ¿äÇÔ
+	//ì§ì ‘ ì‹¤í–‰ì„ ìœ„í•´ì„œëŠ” mainë©”ì„œë“œê°€ í•„ìš”í•¨
 	public static void main(String[] args) {
-		//Ãâ·Â ÄÚµå
+		//ì¶œë ¥ ì½”ë“œ
 		System.out.println("Hello, World!");
 	}
 }
