@@ -21,8 +21,8 @@ public class ArrayEx {
 				3, //대상 배열 내 복사 시작 인덱스
 				scores.length); // 복사할 내용의 길이
 		
-		//loop 돌리면서 내용을 확인
-		//Enhanced for
+		// loop 돌리면서 내용을 확인
+		// Enhanced for
 		
 		for (int value: target) {
 			System.out.println(value + " ");
