@@ -1,4 +1,4 @@
-package com.javaex.oop.goodsv1;
+package com.javaex.oop.goods.v1;
 
 // v1
 public class Goods {
