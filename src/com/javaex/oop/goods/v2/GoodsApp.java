@@ -1,8 +1,7 @@
-package com.javaex.oop.goodsv2;
+package com.javaex.oop.goods.v2;
 
 // v2.
-// 접근 제한자의 이해
-// getter와 setter
+//Goods 객체를 생성하여 사용하는 클래스
 public class GoodsApp {
 
 	public static void main(String[] args) {
