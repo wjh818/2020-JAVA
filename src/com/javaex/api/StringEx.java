@@ -5,10 +5,10 @@ public class StringEx {
 	public static void main(String[] args) {
 //		stringBasic();
 //		stringMethods();
-		strinfBufferEx();
+		stringgBufferEx();
 	}
 
-	private static void strinfBufferEx() {
+	private static void stringBufferEx() {
 		// 복잡한 문자열을 가공할 때 매번 새로운 문자열 객체 생성
 		// -> 내부에 버퍼(임시저장공간)을 가진 StringBuffer를 활용하면 메모리 관리에 용이
 		StringBuffer sb = new StringBuffer("This"); // 버퍼의 생성 + 초기화
