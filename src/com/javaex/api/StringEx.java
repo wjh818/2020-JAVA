@@ -5,7 +5,7 @@ public class StringEx {
 	public static void main(String[] args) {
 //		stringBasic();
 //		stringMethods();
-		stringgBufferEx();
+		stringBufferEx();
 	}
 
 	private static void stringBufferEx() {
