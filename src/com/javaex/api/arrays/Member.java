@@ -4,7 +4,6 @@ package com.javaex.api.arrays;
 // comparable 인터페이스를 구현해줘야 한다
 public class Member implements Comparable {
 
-public class Member {
 	// 필드
 	private String name;
 	
@@ -41,4 +40,4 @@ public class Member {
 		return 0;
 	}
 }
-}
+
