@@ -21,7 +21,7 @@ public class Student {
 		return "Student [code=" + code + ", name=" + name + "]";
 	}
 	
-	// hashCode, equals 메서드 오버라이드
+	// hashCode, equals 메서드 오버라이드  *****중요*****
 	@Override
 	public boolean equals(Object obj) {
 		// 체크 후 다운캐스팅
